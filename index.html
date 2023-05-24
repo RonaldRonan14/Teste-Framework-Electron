@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div style="background-color: rgb(192, 187, 143); display: grid; place-items: center; min-height: 200px;padding: 10px;">
+      <h3>Teste do framework Electron</h3>
+      <div style="display: flex;" class="conteiner">
+        <div>
+          <h4>Lista</h4>
+          <div id="lista">
+
+          </div>
+        </div>
+
+        <div>
+          <h4>Tabela</h4>
+          <table id="nomes">
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <h4>Input</h4>
+          <div style="margin: 0px;">
+            <input type="text" id="nome" style="padding: 3px;" placeholder="Nome">
+            <button id="enviar" style="padding: 3px;">Enviar</button>
+            <br><br>
+            <input type="text" placeholder="Retorno" style="text-align: center; padding: 3px; width: 96%; outline: none; cursor: not-allowed;" readonly id="retornoInput">
+          </div>
+          <div style="margin: 0px; margin-top: 5px;">
+            <input type="text" id="Problema" style="padding: 3px;" placeholder="Problema Matematico">
+            <button id="enviarProblema" style="padding: 3px;">Enviar</button>
+            <br><br>
+            <input type="text" placeholder="Retorno" style="text-align: center; padding: 3px; width: 96%; outline: none; cursor: not-allowed;" readonly id="retornoProblema">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('enviar').addEventListener('click', () => {
+        const nome = document.getElementById('nome').value
+        window.nome(nome);
+      })
+
+      document.getElementById('enviarProblema').addEventListener('click', () => {
+        const Problema = document.getElementById('Problema').value
+        window.problema(Problema)
+      })
+    </script>
+  </body>
+</html>

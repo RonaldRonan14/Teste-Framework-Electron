@@ -1,0 +1,15 @@
+{
+  "name": "lonely-bread-foresee-1h0vb",
+  "productName": "lonely-bread-foresee-1h0vb",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "RRGBrito",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^24.3.0"
+  }
+}
